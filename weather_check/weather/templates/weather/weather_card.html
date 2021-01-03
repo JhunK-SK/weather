@@ -1,0 +1,21 @@
+<div class="container-weather-card">
+    {% for city in city_data %}
+        <div class="card">
+            <div class="card-body">
+                <div class="float">
+                    <a href="{% url 'delete_city' city.id %}"><i class="fas fa-trash-alt trash-icon"></i></a>
+                    <div class="column icon">
+                        <img src="http://openweathermap.org/img/wn/{{ city.icon }}.png" alt="weather icons">
+                    </div>
+                    <div class="column description">
+                        <h5 class="card-title">{{ city.city }}, <span class="card-country-title">{{ city.country }}</span></h5>
+                        <p>{{ city.description}}</p>
+                    </div>
+                </div>
+                <p>temperature: {{ city.temp}} °C</p>
+                <p>feels like: {{ city.feelslike}}</p>
+            </div>
+        </div>
+    {% empty %}
+    {% endfor %}
+</div>

@@ -3,9 +3,66 @@
 
 #nav-title {
     font-family: 'Amatic SC', cursive;
-    font-size: 2rem;3
+    font-size: 2rem;
 }
 
-.what {
-    text-align: center;
+/* remove all button */
+.remove-all {
+    float: right;
+    position: relative;
+    right: 20%;
+}
+.remove-all > a {
+    text-decoration: none;
+}
+
+/* Search Bar section */
+.container-search {
+    margin: 10px 0px 10px;
+}
+.searchbar {
+    width: 35%;
+    margin: auto;
+}
+
+/* Card section */
+.container-weather-card {
+    margin: 10px auto;
+    width: 35%;
+}
+
+.card-country-title {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.container-weather-card h5 {
+    font-family: 'Roboto Mono', monospace;
+    font-style: 400 italic;
+}
+
+.container-weather-card p {
+    font-family: 'Roboto Mono', monospace;
+    font-style: 200 italic;
+    clear: both;
+    margin: 0 0;
+}
+
+/* Card float section */
+.column {
+    float: left;
+}
+.icon {
+    width: 25%;
+}
+.icon img {
+    width: 85px;
+}
+.description {
+    width: 75%;
+}
+.trash-icon {
+    float: right;
+    position: relative;
+    top: 15px;
 }
